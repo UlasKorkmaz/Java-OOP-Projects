@@ -1,0 +1,47 @@
+// ************************************************************************
+// Student.java
+//
+// A student class with methods to add and drop course,
+// change the department, and print information of the student.
+// ************************************************************************
+
+public class Student {
+
+	private String name;
+	private String department;
+	private int CourseNum;
+	private int age;
+
+	// ---------------------------------------------------------------
+	// Constructor -- initializes name, age, number of courses and department
+	// ---------------------------------------------------------------
+
+	// --------------------------------
+	// Decrements course number by the given parameter
+	// --------------------------------
+	public void dropCourse(int num) {
+		// add body of dropCourse
+	}
+
+	// --------------------------------
+	// Increments course number by the given parameter
+	// --------------------------------
+	public void addCourse(int num) {
+		// add body of addCourse
+	}
+
+	// --------------------------------------------------------------------
+	// Returns a string containing the name, age, number of courses and department.
+	// --------------------------------------------------------------------
+	public String toString() {
+		// add body of toString
+	}
+
+	// --------------------------------------------------
+	// Change the department of the student by the given parameter
+	// --------------------------------------------------
+	public void changeDepartment(String dept) {
+		// add body of changeDepartment
+	}
+
+}

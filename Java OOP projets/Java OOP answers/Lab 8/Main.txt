@@ -1,0 +1,205 @@
+
+public class Main {
+	
+	 public static void main(String[] args) throws InterruptedException {
+
+	 STAR21 d1 = new STAR21 (420);
+	 d1.engineStart();
+	 System.out.println("---------------New Entrance-------------");
+	 WIN350 d2 = new WIN350 (350);
+	 d2.engineStart();
+	 }
+	 }
+
+abstract class HighSpeedTrains extends Train{
+    static final int HighSpeedTrains = 425;
+    abstract void engineStart() throws InterruptedException;
+    abstract void showSpeed() throws InterruptedException;
+    }
+
+
+	class Train {
+	 public String name() {
+	 return "Train";
+	 }
+	 }
+	 class WIN350  extends HighSpeedTrains{
+	    String modelName;
+	    int speedRequest;
+	    
+	    int speed;
+	    int distance;
+
+	    public WIN350(int speedRequest) {
+	        this.speedRequest = speedRequest;
+	        this.modelName = "WIN350";
+	    }
+
+	    @Override
+	    void engineStart() throws InterruptedException {
+	        System.out.println("Engine is started!");
+	        Thread.sleep(1000);
+	        System.out.println("Welcome to " + name() + " " + modelName);
+	        Thread.sleep(1000);
+	        showSpeed();
+	        Thread.sleep(1000);
+	        adaptiveCruiseControlSpeed(speed,distance);
+	    }
+
+	    @Override
+	    void showSpeed() throws InterruptedException {
+	        System.out.println("Driver want to achieve " + speedRequest +" kmh speed");
+	        Thread.sleep(1000);
+	        System.out.println("Let's check your speed If It is safe...");
+	        Thread.sleep(1000);
+	        System.out.println("Limited Top Speed is: " + HighSpeedTrains + " kmh.");
+	        Thread.sleep(1000);
+	        if(speedRequest > HighSpeedTrains){
+	            System.out.println("It is not safe to drive at " + speedRequest + " speed!");
+	        }else{
+	            System.out.println("It is safe to drive at " + speedRequest + " speed!");
+	        } }
+	    
+	    
+		 void adaptiveCruiseControlSpeed(int speed,int distance) throws InterruptedException{
+			 
+			 speed=(int) Math.random();
+			 
+			 distance =(int) Math.random();
+			 
+			 if (speedRequest > 200){
+				 
+			        System.out.println("Adaptive Cruise Control is active.");
+			        
+			    }
+			 else
+			 {
+				 
+		 System.out.println("Adaptive Cruise Control is inactive.");
+			        
+			Thread.sleep(1000);
+			        
+		 if(speedRequest < 50000){
+			        	
+	   System.out.println("The front train speed is " + (speedRequest-speed));
+	   
+			 }else
+				 
+		{
+				 if(distance>speedRequest && distance>=50) {
+					 
+					  System.out.println("The distance:" + (distance- speed) + ". Train is slowing...");
+					 
+				 }
+				 
+				 else {
+					 
+					 System.out.println("The distance:" + distance +". Emergency Braking is applying!");
+					 
+				 }
+			        
+		}
+			    } 
+			 
+			 
+			 
+		 }
+	    
+	    
+	    
+	}
+	 class STAR21  extends HighSpeedTrains{
+	    String modelName;
+	    int speedRequest;
+	    int speed;
+	    
+	    int distance;
+
+	    public STAR21(int speedRequest) {
+	        this.speedRequest = speedRequest;
+	        modelName = "STAR21";
+	    }
+
+	    @Override
+	    void engineStart() throws InterruptedException {
+	        System.out.println("Engine is started!");
+	        Thread.sleep(1000);
+	        System.out.println("Welcome to " + name() + " " + modelName);
+	        Thread.sleep(1000);
+	        showSpeed();
+	        Thread.sleep(1000);
+	        adaptiveCruiseControlSpeed(speed,distance);
+	    }
+
+	    @Override
+	    void showSpeed() throws InterruptedException {
+	        System.out.println("Driver want to achieve " + speedRequest +" kmh speed");
+	        Thread.sleep(1000);
+	        System.out.println("Let's check your speed If It is safe...");
+	        Thread.sleep(1000);
+	        System.out.println("Limited Top Speed is: " + HighSpeedTrains + " kmh.");
+	        Thread.sleep(1000);
+	        if(speedRequest > HighSpeedTrains){
+	            System.out.println("It is not safe to drive at " + speedRequest + " speed!");
+	        }else{
+	            System.out.println("It is safe to drive at " + speedRequest + " speed!");
+	        } } 
+	 
+	 
+	 
+	 
+	 void adaptiveCruiseControlSpeed(int speed,int distance) throws InterruptedException{
+		 
+		 speed=(int) Math.random();
+		 
+	distance =(int) Math.random();
+		 
+		 if (speedRequest > 200){
+			 
+		        System.out.println("Adaptive Cruise Control is active.");
+		        
+		    }
+		 else
+		 {
+	 System.out.println("Adaptive Cruise Control is inactive.");
+		        
+		Thread.sleep(1000);
+		        
+	 if(speedRequest < 50000){
+		   System.out.println("The front train speed is " + (speedRequest-speed));
+   
+		 }else
+			 
+	{
+			 if(distance>speedRequest && distance>=50) {
+				 
+				  System.out.println("The distance:" + (distance- speed) + ". Train is slowing...");
+				 
+			 }
+			 
+			 else {
+				 
+				 System.out.println("The distance:" + distance +". Emergency Braking is applying!");
+				 
+			 }
+			
+		        
+	}
+		    } 
+		 
+		 
+		 
+	 }
+	 
+	  
+	 
+	 }
+	 
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 

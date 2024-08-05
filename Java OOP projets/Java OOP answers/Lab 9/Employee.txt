@@ -1,0 +1,59 @@
+
+public class Employee implements Comparable {
+	
+	 String firstName;
+	
+	 String lastName;
+	
+	 int salary;
+	
+	
+	public Employee(String firstName,String lastName,int salary) {
+		
+		
+		this.firstName=firstName;
+		
+		this.lastName=lastName;
+		
+		this.salary=salary;
+	
+	}
+	
+	  public int compareTo(Object o) {
+		  
+	        Employee c = (Employee) o;
+	        Integer x = c.salary;
+	          Integer y = this.salary;
+	        if(y.compareTo(x) != 0){
+	        	
+	            return y.compareTo(x);
+	            
+	        }
+	        
+	        return this.lastName.compareTo(c.lastName);
+	    }
+
+	  
+
+	public String toString() {
+        return lastName +
+                ", " + firstName +
+                ":\t" + salary;
+    }
+	  
+	  
+
+	   
+	 
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+

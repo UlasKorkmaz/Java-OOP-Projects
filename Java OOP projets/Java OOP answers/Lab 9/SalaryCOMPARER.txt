@@ -1,0 +1,30 @@
+
+
+public class SalaryComparer {
+public static void main(String[] args) {
+Employee[] emp = new Employee[10];
+emp[0] = new Employee("Murphy", "Law", 3000);
+emp[1] = new Employee("Daniel", "Duck", 4935);
+emp[2] = new Employee("Jamie", "Walter", 3000);
+emp[3] = new Employee("Diana", "Jones", 2800);
+emp[4] = new Employee("Wis", "Trump", 1570);
+emp[5] = new Employee("Jane", "Black", 3000);
+emp[6] = new Employee("Kim", "Port", 7300);
+emp[7] = new Employee("Annie", "Churcil", 5000);
+emp[8] = new Employee("John", "Doe", 2850);
+emp[9] = new Employee("Oscar", "Smith", 3000);
+
+
+
+System.out.println("\nRanking of the employees by salary\n");
+
+Sorting.selectionSortAscending(emp);
+for (Employee c: emp){
+
+System.out.println(c);
+
+}
+}
+
+
+}

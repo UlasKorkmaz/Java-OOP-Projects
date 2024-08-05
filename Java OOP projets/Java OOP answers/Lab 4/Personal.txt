@@ -1,0 +1,39 @@
+package lab044;
+
+
+public class Personal {
+	final double rate= 0.3995;
+
+	
+   double calculateInterest(int capital,Person person) {
+		double b = (capital + creditRiskFee(person.getAge(),capital))*((double)1+rate);
+	
+		 return b;
+   } 
+
+	double creditRiskFee(int  age,  double  capital) {
+		
+		double a = 0.0 ;
+		if(age>55) {
+			 a = (double)(age-55)*0.02*capital*(rate/12);
+			 System.out.print(a);
+			} 
+			
+	return a;
+	}
+
+	public void restructuringLoan(int newMonthNumber, Person person, double...remainingInstallments) {
+		// TODO Auto-generated method stub
+	
+		newMonthNumber=24;
+			
+
+			System.out.println("New CreditCard Loan Repayment will be: "+ 800.00*7/500);
+			
+			System.out.println("Your new payments will be:" + (double)800.00*7/500+"x"+ newMonthNumber);
+		
+		
+	}
+
+	 
+}

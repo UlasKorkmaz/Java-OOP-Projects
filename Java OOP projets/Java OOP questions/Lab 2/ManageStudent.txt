@@ -1,0 +1,28 @@
+
+public class ManageStudent {
+
+	public static void main(String[] args)
+	{
+		Student std1, std2;
+		
+		//create student1 for Emily with age 20, number of courses 4 and department ECON
+		
+		//create student2 for Joe with age 22, number of courses 5 and department CMPE
+		
+		//add 2 courses to Joe by addCourse
+		
+		//print Joe's new course number
+		
+		//drop 3 courses from Emily by dropCourse
+		
+		//print Emily's new course number
+		
+		//change the department of Joe into "PSY"
+		
+		//change the department of Emily into "ART"
+		
+		//print summary for both students by toString
+	
+	}
+
+}

@@ -1,0 +1,85 @@
+//This.position="Employe"; tESTEMPLOYEE İÇİN
+//This.position="Manager"; TestEmployee2 için
+
+/*
+
+import java.util.Scanner;
+
+public class TestEmployee
+
+{
+
+    public static void main(String[] args)
+
+    {
+
+        String name;
+
+        String position;
+
+        double salary;
+
+        long ID;
+
+        Employee emp;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter employees name");
+
+        name = scan.nextLine();
+
+ 
+
+        System.out.println("Employee " + name + ":");
+
+        emp = new Employee(name);
+
+        System.out.println(emp);
+
+       
+
+        System.out.println("\nEnter initial position");
+
+        position = scan.nextLine();
+
+        emp = new Employee(position,name);
+
+        System.out.println("Employee " + name + ":");
+
+        System.out.println(emp);
+
+       
+
+        System.out.println("\nEnter employee ID and salary");
+
+        ID = scan.nextLong();
+
+        salary = scan.nextDouble();
+
+        emp = new Employee(salary,position,name,ID);
+
+      
+
+        System.out.println("Employee for " + name + ":");
+
+        System.out.println(emp);
+
+       
+
+        emp.getPosition("Senior Manager");
+
+                System.out.print("\nThe employee got promoted to " + emp.position);
+
+        System.out.println();
+
+        emp.getPromotion(100,"CEO");
+
+        System.out.print("\nThe employee got promoted to " + emp.position);
+
+        System.out.print("\nThe new salary is " + emp.salary);
+
+                   
+ }
+
+}*/

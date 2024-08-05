@@ -1,0 +1,27 @@
+public class Employee {
+	private double salary;
+	private String name;
+	private String position;
+	private long ID;
+
+	
+
+	public void getPromotion(String pos) {
+		position = pos;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+	
+	public long getID() {
+		return ID;
+	}
+	public String toString() {
+		return "Name:" + name + "Position:"+position+"\nID #: " + ID + "\nSalary: " + salary;
+	}
+}

@@ -1,0 +1,94 @@
+//This.position="Employe"; tESTEMPLOYEE İÇİN
+//This.position="Manager"; TestEmployee2 için
+
+
+
+import java.util.Objects;
+import java.util.Random;
+
+
+
+public class Employee {
+	
+	 double salary;
+	 String name;
+	 String position;
+	 long ID;
+
+	
+	 public Employee (double salary, String position, String name, long ID) {
+		 
+		
+		this.salary=salary;
+		this.position=position;
+		this.name=name;
+		this.ID=ID;
+		
+		 
+		 
+	 }
+	
+	 public Employee (String position, String name) {
+		 
+		 this.salary = 0;
+		 this.position=position;
+		 this.name = name;
+	     Random random = new Random();
+	     this.ID = Math.abs(random.nextInt());
+		 
+		 
+	 }
+	 
+	 
+	 
+	 public Employee (String name) {
+		    
+		    this.salary = 0;
+	        this.name = name;
+	        Random random = new Random();
+	        this.ID = Math.abs(random.nextInt());
+	        this.position="Employee";
+	        this.position="Manager";
+		 
+	 }
+	
+
+	public void getPromotion(double amount,String position) {
+		this.salary+=amount;
+		this.position=position;
+	}
+
+	public void  getPosition(String position) {
+		this.position=position;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+	
+	public long getID() {
+		return ID;
+	}
+	public String toString() {
+		return "Name:" + name + "\nPosition:"+position+
+				"\nID #: " + ID 
+				+ "\nSalary: " + salary;
+	}
+	
+    static Employee combine(Employee emp1, Employee emp2){
+        if (Objects.equals(emp1.name, emp2.name)){
+            if (emp1.ID != emp2.ID){
+            	
+                Random random = new Random();
+                return new Employee(emp1.salary + emp2.salary, emp1.name, emp2.name, Math.abs(random.nextInt()));
+            }
+            
+                    }else{
+            System.out.println("Sorry, employees with different names cannot be combined.");
+            return null;
+        }
+		return null ;
+    }
+	
+	
+}

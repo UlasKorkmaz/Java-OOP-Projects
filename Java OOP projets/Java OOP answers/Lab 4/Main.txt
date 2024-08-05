@@ -1,0 +1,87 @@
+package lab044;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	 	 Person person1 = new Person("Ali", "Irmak", 36, 5000);
+		 Person person2 = new Person("Veli", "Kaya", 61, 3500);
+		 CreditCard card1 = new CreditCard();
+		 Vehicle vehicle1 = new Vehicle();
+		 Personal personal1 = new Personal();
+		
+		 card1.restructuringLoan(12, person1, 1244.00, 1244.00, 1244.00,1244.00);
+		 vehicle1.restructuringLoan(24, person1, 800.00, 800.00, 800.00,800.00, 800.00, 800.00, 800.00);
+		 personal1.restructuringLoan(24, person2, 650.00, 650.00, 650.00,650.00, 650.00, 650.00, 650.00);
+	
+		 
+		 
+		 public void restructuringLoan(int newMonthNumber, Person person, double...remainingInstallments){
+				 
+	
+			
+
+				System.out.println("New CreditCard Loan Repayment will be: "+ (double)person1.getSalary()*800.00*4);
+				
+				System.out.println("Your new payments will be:" + (double) 800.00*7/500+"x"+ newMonthNumber); 
+ 
+		 }
+
+		 
+		 public void restructuringLoan(int newMonthNumber, Person person, double...remainingInstallments){
+			 
+				
+				
+
+				System.out.println("New CreditCard Loan Repayment will be: "+ (double)person1.getSalary()*650*4);
+				
+				System.out.println("Your new payments will be:" + (double) 650.00*7/500+"x"+ newMonthNumber); 
+
+		 }
+		 
+		 
+		 public void restructuringLoan(int newMonthNumber, Person person, double...remainingInstallments){
+			 
+				
+				
+
+				System.out.println("New CreditCard Loan Repayment will be: "+ (double)person1.getSalary()*1244.00*4);
+				
+				System.out.println("Your new payments will be:" + (double) 1244.00*7/500+"x"+ newMonthNumber); 
+
+		 }
+		 
+		 
+	
+			}
+
+	private static double calculateInterest(CreditCard card1) {
+		// TODO Auto-generated method stub
+		
+		
+		return 1244.00*4;
+		
+	}
+
+	private static double calculateInterest(Vehicle vehicle1) {
+		// TODO Auto-generated method stub
+		
+		
+		return 800.00*7;
+		
+	}
+
+
+	
+	private static double calculateInterest(Personal personal1) {
+		// TODO Auto-generated method stub
+		
+		
+		return 650.00*7;
+		
+	}
+
+
+}

@@ -1,0 +1,61 @@
+
+import java.util.Scanner;
+
+public class StringExercise {
+
+	public static void main(String[] args) {
+		
+     Scanner scan = new Scanner(System.in);
+		
+		String sentence = new String("Hello World Again! ");
+		int length; // length of the sentence
+		String first; //First part of the sentence 
+		String second; // Second part of the sentence
+		String mixed; // new sentence after the concatenation of first and second
+		//compute the length of the sentence
+		
+		String changedSentence;
+		String fruit1;
+		String fruit2;
+		
+		String word =("No More");
+		Boolean result;
+		
+		length = sentence.length();
+        
+		
+		System.out.println("their two favorite fruits");
+		
+		//take the first part of the sentence in between 0 and the half of the length
+		first = sentence.substring(0,length/2);
+	
+		first=scan.next();
+	
+		
+		//take the second part of the sentence in between the half of the length and length
+		second = sentence.substring(length/2,length);
+		
+		second=scan.next();
+		
+		//concatenate the String variables first and second
+		mixed = second.concat(first);
+		mixed = first.concat(second);
+		
+	
+       System.out.println();
+		
+		
+		//print out the lines
+		
+		System.out.println("The length of the sentence: "+length);
+		
+		System.out.println("New Sentence: "+mixed.toUpperCase());
+		
+		
+		
+		
+		
+	}
+
+	
+}

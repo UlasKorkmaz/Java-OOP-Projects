@@ -1,0 +1,46 @@
+//This.position="Employe"; tESTEMPLOYEE İÇİN
+//This.position="Manager"; TestEmployee2 için
+
+
+import java.util.Scanner;
+
+public class TestEmployee2 {
+	   public static void main(String[] args) {
+		   
+		   
+	 String name;
+     double salary;
+     long ID = 0;
+     Employee emp1, emp2, emp3;
+     
+     Scanner scan = new Scanner(System.in);
+     
+     System.out.print("Enter name for first employee: ");
+     name = scan.nextLine();
+     emp1 = new Employee(name);
+     System.out.println("First Employee");
+     System.out.println(emp1);
+
+     System.out.print("\nEnter name for second employee: ");
+     name = scan.nextLine();
+     System.out.println("Second Employee");
+     emp2 = new Employee(name);
+     System.out.println(emp2);
+
+     System.out.print("\nEnter name for third employee: ");
+     name = scan.nextLine();
+     System.out.println("Third Employee");
+     emp3 = new Employee(name);
+
+     System.out.println(emp3);
+
+     System.out.println();
+     System.out.println("Trying to combine second and third employees.");
+     System.out.println();
+     Employee combined = Employee.combine(emp2,emp3);
+     if (combined != null){
+         System.out.println(" ");
+         System.out.println(combined);
+	
+	
+}}}
